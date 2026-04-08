@@ -55,6 +55,10 @@ echo "{'variables':{'android_ndk_path':''}}" > ~/.gyp/include.gypi
 # --- STEP 4: Install OpenClaw ---
 echo -e "${YELLOW}[4/6] Installing OpenClaw via npm (This may take 5-10 mins)...${NC}"
 # Install globally
+npm install -g @buape/carbon
+npm install -g @larksuiteoapi/node-sdk
+npm install -g @slack/web-api
+npm install -g grammy
 npm install -g openclaw@latest
 
 # --- STEP 5: Patch Hardcoded Paths (CRITICAL) ---
